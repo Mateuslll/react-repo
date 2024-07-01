@@ -1,4 +1,4 @@
-import Square, { Circle } from "@/components/GeoIcons";
+import { Circle, Square } from "@/components/GeoIcons";
 
 const Page = () => {
   return (

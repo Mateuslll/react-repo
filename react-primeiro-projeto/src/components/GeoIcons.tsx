@@ -1,4 +1,4 @@
-const Square = () => {
+export const Square = () => {
     return(
         <div className="w-52 h-52 bg-orange-700 text-white">
             Foco no processo!
@@ -13,5 +13,3 @@ export const Circle = () => {
         </div>
     );
 }
-
-export default Square;
