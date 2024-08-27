@@ -1,17 +1,18 @@
 import { GeoForm } from "@/components/GeoForm";
 import { Person } from "@/components/Person";
 import { Card } from "@/components/Card";
+import { Circle } from "@/components/Circle";
 const Page = () => {
   return (
     <div>
       {/* <h3>Texto Complementar</h3>
       <GeoForm /> */}
-      <Card>
-        <>
-          <h3 className="text-3xl font-bold italic">"Frase de efeito"</h3> 
-          <p className="text-right text-sm">- Autor desconhecido</p> 
-        </>
-      </Card>
+      <>
+        <h3 className="text-3xl font-bold italic">"Frase de efeito"</h3>
+        <p className="text-right text-sm">- Autor desconhecido</p>
+        {/* <Circle/> */}
+      </>
+      <Card phrase="Frase de efeito" author="Salve" />
       {/* <Person
         name="Lucian Legend"
         avatar={
