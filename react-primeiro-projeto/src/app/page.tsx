@@ -3,34 +3,18 @@ import { Person } from "@/components/Person";
 import { Card } from "@/components/Card";
 import { Circle } from "@/components/Circle";
 const Page = () => {
+  const people = [
+    { id: 1, name: "Fulano", profession: "engineer" },
+    { id: 2, name: "Ciclano", profession: "chemist" },
+    { id: 3, name: "John", profession: "psychologist" },
+    { id: 4, name: "Maria", profession: "doctor" },
+    { id: 5, name: "Pedro", profession: "lawyer" },
+  ];
+
   return (
     <div>
-      {/* <h3>Texto Complementar</h3>
-      <GeoForm /> */}
-      <>
-        <h3 className="text-3xl font-bold italic">"Frase de efeito"</h3>
-        <p className="text-right text-sm">- Autor desconhecido</p>
-        {/* <Circle/> */}
-      </>
-      <Card phrase="Frase de efeito" author="Salve" />
-      {/* <Person
-        name="Lucian Legend"
-        avatar={
-          "https://ddragon.leagueoflegends.com/cdn/14.13.1/img/champion/Lucian.png"
-        }
-        roles={["Adcarry", "Dps", "Mid/bottom"]}
-      />
-      <Person
-        name="Lucian Legend"
-        avatar={
-          "https://ddragon.leagueoflegends.com/cdn/14.13.1/img/champion/Lucian.png"
-        }
-        roles={["Adcarry", "Dps", "Mid/bottom"]}
-      />
-      <Person
-        name="Kha'zix"
-        roles={["Adcarry", "Dps", "Mid/bottom"]}
-      /> */}
+      <h1 className="font-bold text-2xl">Pessoas</h1>
+      <h3>Texto Complementar</h3>
     </div>
   );
 };
