@@ -1,22 +1,43 @@
-import { GeoForm } from "@/components/GeoForm";
-import { Person } from "@/components/Person";
-import { Card } from "@/components/Card";
-import { Circle } from "@/components/Circle";
+import { GeoForm } from '@/components/GeoForm';
+import { Person } from '@/components/Person';
+import { Card } from '@/components/Card';
+import { Circle } from '@/components/Circle';
+import { peopleList } from '@/data/peopleList';
+import React from 'react';
 const Page = () => {
-  const people = [
-    { id: 1, name: "Fulano", profession: "engineer" },
-    { id: 2, name: "Ciclano", profession: "chemist" },
-    { id: 3, name: "John", profession: "psychologist" },
-    { id: 4, name: "Maria", profession: "doctor" },
-    { id: 5, name: "Pedro", profession: "lawyer" },
-  ];
+  const chemists = peopleList.filter(
+    (person) => person.profession === 'chemist',
+  );
 
   return (
     <div>
-      <h1 className="font-bold text-2xl">Pessoas</h1>
-      <h3>Texto Complementar</h3>
+      <div>
+        <h1 className="font-bold text-2xl">Pessoas</h1>
+        <h3>Listagem Abaixo</h3>
+        {peopleList.length > 0 && (
+          <ul>
+            {peopleList.map((person) => (
+              <li key={person.id}>
+                {person.name} - {person.profession}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      <div>
+        <h3>Lista de Quimicos</h3>
+        {chemists.length > 0 && (
+          <ul>
+            {chemists.map((person) => (
+              <li key={person.id}>
+                {person.name} - {person.profession}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 };
-
 export default Page;
