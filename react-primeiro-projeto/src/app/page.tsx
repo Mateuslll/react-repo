@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <div>
       <div>
-        <h1 className="font-bold text-2xl">Pessoas</h1>
+        <h1 className="font-bold text-2xl text-color">Pessoas</h1>
         <h3>Listagem Abaixo</h3>
         {peopleList.length > 0 && (
           <ul>
